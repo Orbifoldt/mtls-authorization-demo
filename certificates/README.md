@@ -1,9 +1,9 @@
 # Generate certificates for Mutual-TLS
-This explains how to generate certificates
+This explains how to generate server and client certificates by creating your own Certificate Authority with openssl.
 
 ## Creating a Certification Authority certificate
 
-First, we need a Certificate Authority (CA) which provide the root certificate. Generate a private key for the root CA:
+First, we need a Certificate Authority (CA) which provides the root certificate. Start by generating a private key for the root CA:
 ```bash
 openssl genrsa -out rootCA.key 2048
 ```
